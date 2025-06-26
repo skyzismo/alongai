@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Incrível</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="text-gray-800 bg-white">
+
+    <!-- HERO -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4" data-aos="fade-in">
+      <h1 class="text-5xl font-bold mb-4">Transforme sua presença online</h1>
+      <p class="text-lg max-w-xl mb-6">Crie páginas incríveis, otimizadas e que convertem com nossa solução.</p>
+      <a href="#contato" class="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition transform hover:scale-105">Quero Começar</a>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="py-20 px-6 max-w-6xl mx-auto" id="beneficios">
+      <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">O que você ganha com a gente</h2>
+      <div class="grid md:grid-cols-3 gap-10 text-center">
+        <div class="p-6 shadow hover:shadow-xl transition rounded" data-aos="zoom-in">
+          <h3 class="text-xl font-semibold mb-2">🚀 Performance</h3>
+          <p>Sites rápidos que mantêm seus visitantes engajados.</p>
+        </div>
+        <div class="p-6 shadow hover:shadow-xl transition rounded" data-aos="zoom-in" data-aos-delay="100">
+          <h3 class="text-xl font-semibold mb-2">📱 Responsivo</h3>
+          <p>Layout adaptado para todos os dispositivos.</p>
+        </div>
+        <div class="p-6 shadow hover:shadow-xl transition rounded" data-aos="zoom-in" data-aos-delay="200">
+          <h3 class="text-xl font-semibold mb-2">🎯 Focado em conversão</h3>
+          <p>Projetado para levar seu cliente à ação.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="py-20 bg-gray-100 px-6" id="sobre">
+      <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-4">Quem somos</h2>
+        <p class="text-lg">Somos uma equipe apaixonada por tecnologia e design, com foco em resultados reais para nossos clientes. Ajudamos marcas a se destacarem online.</p>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="py-20 px-6 max-w-5xl mx-auto" id="depoimentos">
+      <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">O que dizem nossos clientes</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white p-6 shadow rounded" data-aos="fade-right">
+          <p>"Resultados excelentes em poucos dias! Superou as expectativas."</p>
+          <span class="block mt-4 font-bold">Ana, empreendedora</span>
+        </div>
+        <div class="bg-white p-6 shadow rounded" data-aos="fade-up">
+          <p>"Equipe dedicada e página lindíssima. Recomendo demais."</p>
+          <span class="block mt-4 font-bold">Carlos, designer</span>
+        </div>
+        <div class="bg-white p-6 shadow rounded" data-aos="fade-left">
+          <p>"Agora tenho muito mais leads vindo do meu site. Valeu cada centavo."</p>
+          <span class="block mt-4 font-bold">Joana, consultora</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 px-6 bg-gray-100" id="faq">
+      <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-up">Dúvidas Frequentes</h2>
+      <div class="max-w-3xl mx-auto space-y-6">
+        <div data-aos="fade-up">
+          <h3 class="font-semibold text-lg">📌 Quanto tempo leva para a página ficar pronta?</h3>
+          <p>Em média, de 3 a 7 dias úteis dependendo da complexidade.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <h3 class="font-semibold text-lg">💳 Qual o valor?</h3>
+          <p>Temos planos a partir de R$ 499. Entre em contato para uma proposta personalizada.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <h3 class="font-semibold text-lg">🛠️ Posso editar depois?</h3>
+          <p>Sim! Fornecemos acesso para edições simples ou manutenção com nossa equipe.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section id="contato" class="py-20 px-6">
+      <div class="max-w-2xl mx-auto" data-aos="fade-up">
+        <h2 class="text-2xl font-bold text-center mb-6">Vamos conversar?</h2>
+        <form id="leadForm" class="bg-white shadow p-6 rounded space-y-4">
+          <input type="text" placeholder="Seu nome" class="w-full border border-gray-300 p-3 rounded" required />
+          <input type="email" placeholder="Seu e-mail" class="w-full border border-gray-300 p-3 rounded" required />
+          <textarea placeholder="Sua mensagem" class="w-full border border-gray-300 p-3 rounded" rows="4"></textarea>
+          <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition transform hover:scale-105">Enviar</button>
+        </form>
+        <p id="msg" class="text-center text-green-600 mt-4 hidden">Mensagem enviada com sucesso!</p>
+      </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+      <p>&copy; 2025 SuaMarca. Todos os direitos reservados.</p>
+      <div class="mt-2 space-x-4">
+        <a href="#" class="hover:underline">Instagram</a>
+        <a href="#" class="hover:underline">LinkedIn</a>
+        <a href="#" class="hover:underline">Contato</a>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>AOS.init();</script>
+  </body>
+</html>
