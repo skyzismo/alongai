@@ -26,7 +26,7 @@
     <div>
       <h1 class="text-5xl font-bold mb-4">O de hoje tá pago! <strong class="text-yellow-500">#AlongAI</strong></h1>
       <p class="text-lg max-w-xl mb-6">Chega de ficar travado na cadeira! Com o AlongAI, você se movimenta de forma leve, divertida e com autonomia. Bora se alongar?</p>
-      <a href="#contato" class="bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition transform hover:scale-105">Quero começar!</a>
+      <a href="#contato" class="bg-yellow-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition transform hover:scale-105">Quero começar!</a>
     </div>
 
   </div>
@@ -52,54 +52,105 @@
       </div>
     </section>
 
-    <!-- TODO: COLOCAR TÍTULO PARA O LADO E ADICIONAR FOTO LATERAL -->
+    <!-- DONE: COLOCAR TÍTULO PARA O LADO E ADICIONAR FOTO LATERAL -->
     <!-- PARA QUEM É -->
-    <section class="py-20 bg-gray-100 px-6" id="publico-alvo">
-      <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
-        <h2 class="text-3xl font-bold mb-4">Para quem é?</h2>
-        <p class="text-lg">Empresas tech, startups, universidades e equipes que passam muito tempo sentadas. Reduza tensões, melhore o clima e aumente o foco com AlongAI.</p>
+    <section class="relative py-20 px-6 text-white" id="publico-alvo">
+      <!-- Fundo com gradiente escurecendo -->
+      <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-0"></div>
+
+      <!-- Imagem de fundo posicionada à direita -->
+      <div class="absolute inset-0 bg-no-repeat bg-cover bg-right z-[-1]" style="background-image: url('/utils/imgs/coworkers.jpg');"></div>
+
+      <!-- Espaço à direita para manter layout equilibrado -->
+      <div class="md:w-1/2 h-72 md:h-96"></div>
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8 relative z-10">
+        <!-- Texto à esquerda -->
+        <div class="md:w-1/2 self-center">
+          <h2 class="text-5xl font-bold mb-12">Para quem é?</h2>
+          <p class="text-lg leading-relaxed text-white/90">
+            Empresas tech, startups, universidades e equipes que passam muito tempo sentadas.
+            <strong>Reduza tensões, melhore o clima e aumente o foco com AlongAI!</strong>
+          </p>
+        </div>
+        
       </div>
     </section>
+
+
 
     <!-- RESULTADOS -->
     <section class="py-20 px-6 max-w-5xl mx-auto" id="vantagens">
       <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Nosso diferencial</h2>
       <div class="grid md:grid-cols-4 gap-8 text-center">
         <div class="bg-white p-6 shadow rounded" data-aos="fade-up">
-          <p>🚀 Feedback e orientação dos seus movimentos em tempo real</p>
+          <div class="flex justify-center mb-6">
+            <img src="/utils/imgs/thumbs-up-trust.svg" alt="Logo AlongAI" class="w-20 md:w-20" />
+          </div>
+          <p>Feedback e orientação dos seus movimentos em tempo real</p>
         </div>
         <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="100">
-          <p>🧘 Rotina pronta para você não gastar tempo procurando</p>
+          <div class="flex justify-center mb-6">
+            <img src="/utils/imgs/task-checklist.svg" alt="Logo AlongAI" class="w-20 md:w-20" />
+          </div>
+          <p>Rotina pronta para você não gastar tempo procurando</p>
         </div>
         <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="200">
-          <p>🤖 Utilização de tecnologia de ponta mais recente do mercado</p>
+          <div class="flex justify-center mb-6">
+            <img src="/utils/imgs/microchip-ai.svg" alt="Logo AlongAI" class="w-20 md:w-20" />
+          </div>
+          <p>Utilização de tecnologia de ponta mais recente do mercado</p>
         </div>
-        <!-- TODO: ADICIONAR TAG DE "EM BREVE" -->
+        <!-- DONE: ADICIONAR TAG DE "EM BREVE" -->
         <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="300">
-          <p>🎮 Ranking competitivo para estimular você e outros colaboradores</p>
+          <div class="flex justify-center mb-6">
+            <span class="absolute -top-2 -right-2 bg-red-700 text-white text-xs font-semibold px-2 py-1 rounded-full shadow">
+              Em Breve!
+            </span>
+            <img src="/utils/imgs/gamepad.svg" alt="Logo AlongAI" class="w-20 md:w-20" />
+          </div>
+          <p>Ranking competitivo para estimular você e outros colaboradores</p>
         </div>
       </div>
       </div>
     </section>
+
+    
 
     <!-- TODO: MUDAR FONTES PARA ALGO MAIS CHAMATIVO -->
     <!-- TODO: COLOCAR OS TIPOS DE ALONGAMENTO E OS FLATICONS EM DIAGONAL, UM EMBAIXO DO OUTRO -->
     <!-- TODO: FAZER OS MOCKUPS DOS PRINTS DOS TIPOS DE EXERCÍCIO, COMO NO EXEMPLO: https://kikos.fit/?gad_source=1&gad_campaignid=22281537804&gbraid=0AAAAABpU2L6h-aQ3I9IUDnliimS2iZt_h&gclid=CjwKCAjwsZPDBhBWEiwADuO6y8fbbcfJ6Vtv-aP_GgMEpbry-ShD6w8KYiZwPt6URCF7z2lnQM-_YxoCFYYQAvD_BwE  -->
     <!-- TIPOS ALONGAMENTOS -->
 
-    <section class="py-20 px-6 max-w-5xl mx-auto" id="depoimentos">
-      <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Esses são os tipos de alongamento disponíveis na palma de sua mão!</h2>
-      <div class="grid md:grid-cols-2 gap-8 text-center">
-        <div class="bg-white p-6 shadow rounded" data-aos="fade-right">
-          <p>"Nossa equipe adora os desafios semanais. Além de aliviar o corpo, virou uma competição divertida!"</p>
-          <span class="block mt-4 font-bold">Laura, RH em startup de tecnologia</span>
+    <section class="py-20 px-6 max-w-6xl mx-auto" id="depoimentos">
+      <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+        Esses são os tipos de alongamento disponíveis na palma de sua mão!
+      </h2>
+
+      <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+        
+        <!-- Texto -->
+        <div class="w-full md:w-1/2" data-aos="fade-right">
+          <p class="text-lg leading-relaxed text-center md:text-left">
+            Alongamentos de laboral nunca foram tão <br/>
+            Simples. <br>
+            Diretos. <br>
+            E muito intuivos.
+            Empresas tech, startups, universidades e equipes que passam muito tempo sentadas.<br />
+            <strong class="text-blue-900">Reduza tensões, melhore o clima e aumente o foco com AlongAI!</strong>
+          </p>
         </div>
-        <div class="bg-white p-6 shadow rounded" data-aos="fade-left">
-          <p>"Com o AlongAI, o alongamento virou parte da nossa rotina. A galera realmente se envolve."</p>
-          <span class="block mt-4 font-bold">Diego, coordenador de TI</span>
+
+        <!-- Imagem com tamanho maior -->
+        <div class="w-full md:w-1/2 flex justify-center" data-aos="fade-left">
+          <img src="/utils/imgs/mockup_alongai.svg"
+              alt="Mockup do app AlongAI"
+              class="w-full md:w-[1000px] lg:w-[940px] max-w-none" />
         </div>
+
       </div>
     </section>
+
+
 
     <!-- FAQ -->
     <section class="py-20 px-6 bg-gray-100" id="faq">
