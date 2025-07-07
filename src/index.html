@@ -186,7 +186,7 @@
       <div class="max-w-3xl mx-auto space-y-6">
         <div data-aos="fade-up">
           <h3 class="font-semibold text-white text-lg">🖥️ Preciso instalar algo?</h3>
-          <p class="text-white">Sim! O AlongAI é um aplicativo <strong>exclusivo</strong> para a plataforma <strong>iOS</strong></p>
+          <p class="text-white">Sim! O AlongAI é um aplicativo <strong>exclusivo</strong> para a plataforma <strong>iOS</strong>.</p>
         </div>
         <div data-aos="fade-up" data-aos-delay="100">
           <h3 class="font-semibold text-white text-lg">⏱️ Quanto tempo dura cada sessão?</h3>
@@ -203,16 +203,23 @@
     <!-- FORMULÁRIO -->
     <section id="contato" class="py-20 px-6">
       <div class="max-w-2xl mx-auto" data-aos="fade-up">
-        <h2 class="text-2xl font-bold text-center mb-6">Quer fazer uma avaliação? Entre em contato!</h2>
-        <form id="leadForm" class="bg-white shadow p-6 rounded space-y-4">
-          <input type="text" placeholder="Seu nome" class="w-full border border-gray-300 p-3 rounded" required />
-          <input type="email" placeholder="Seu e-mail" class="w-full border border-gray-300 p-3 rounded" required />
-          <textarea placeholder="Sua mensagem" class="w-full border border-gray-300 p-3 rounded" rows="4"></textarea>
-          <button type="submit" class="w-full bg-blue-950 text-white p-3 rounded hover:bg-yellow-400 transition transform hover:scale-105">Enviar</button>
+        <h2 class="text-2xl font-bold text-center mb-6">
+          Quer fazer uma avaliação? Entre em contato!
+        </h2>
+
+        <form action="https://formspree.io/f/xgvyqqab" method="POST" class="bg-white shadow p-6 rounded space-y-4">
+          <input type="text" name="nome" placeholder="Seu nome" class="w-full border border-gray-300 p-3 rounded" required />
+          <input type="email" name="email" placeholder="Seu e-mail" class="w-full border border-gray-300 p-3 rounded" required />
+          <textarea name="message" placeholder="Sua mensagem" class="w-full border border-gray-300 p-3 rounded" rows="4" required></textarea>
+          <button type="submit" class="w-full bg-blue-950 text-white p-3 rounded hover:bg-yellow-400 transition transform hover:scale-105">
+            Enviar
+          </button>
         </form>
+
         <p id="msg" class="text-center text-green-600 mt-4 hidden">Mensagem enviada com sucesso!</p>
       </div>
     </section>
+
 
     <!-- RODAPÉ -->
     <footer class="bg-gray-800 text-white text-center py-6">
